@@ -52,6 +52,12 @@ function searchButtonClicked(event){
         return;
     }
 
+    if(!tasks.includes(searchedText)){
+        searchButtonHide();
+        AddButtonShow();
+        return;
+    }
+
     let tempTask = [];
 
     for(let i in tasks){
@@ -63,6 +69,9 @@ function searchButtonClicked(event){
     if(tempTask.length == 0){
         AddButtonShow();
         searchButtonHide();
+    }else{
+        AddButtonHide();
+        searchButtonShow();
     }
     
     renderTaskInAsHTML(tempTask)
