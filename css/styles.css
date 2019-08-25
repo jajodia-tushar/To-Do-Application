@@ -1,3 +1,5 @@
+
+/* ==================================Global Level ==================================*/
 body{
     font-family: cursive;
     height: 100vh;
@@ -8,26 +10,113 @@ body{
 }
 
 
-/* Header CSS   Starts       */
+/* ============================ Header CSS   Starts ==========================================      */
 .header{
     padding: 10px;
     text-align: center;
     height: 10vh;
     width: 100%;
 }
-/* Header CSS Ends */
+/* ================================== Header CSS Ends ==================================*/
 
-
-/* Main Starts*/
 
 .container{
     clear: both;
     height: 85vh;
     width: 100%;
 }
+/* ==================================Global Level ==================================*/
 
 
-/* Naviagation Bar CSS Starts */
+
+/*================================== All-Content Starts ===================================== */
+.content{
+    float: left;
+    width: 69%;
+    height: 85%;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1%;
+    margin-left: 0%;
+    overflow: auto;
+}
+
+
+/* ================================== To-DO Content Ends Here  ==================================*/
+.task-table th, .task-table td {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 0.01px solid #000000;
+    box-shadow: 0 2px 3px 0 rgb(180, 236, 236);
+  }
+
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.input-field{
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        padding-right: 0px;
+        border: none;
+        font-size: 20px;
+  }
+
+.search-box, .search-box td{
+      padding: 0px;
+      width: 86%;
+}
+
+.edit-field{
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #dcecec;
+        padding: 1%;
+        padding-right: 0px;
+        border: none;
+        font-size: 20px;
+}
+
+.to-do{
+    /* display: none; */
+}
+/* ================================== To-DO Content Ends Here  ==================================*/
+
+
+/* ================================== Users Content Ends Here  ==================================*/
+.users{
+    display: none;
+}
+/* ================================== Users Content Ends Here  ==================================*/
+
+/* ================================== Contacts Content Ends Here  ==================================*/
+.contact-us{
+    display: none;
+}
+/* ================================== Contacts Content Ends Here  ==================================*/
+
+
+/* ==================================All-Content Ends Here ==================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================Naviagation Bar CSS Starts==================================== */ 
 .navigation{
     float: left;
     width: 20%;
@@ -51,23 +140,15 @@ body{
     margin: 1%;
     border: 0.01px solid #000000;
 }
-/* Navigation Bar CSS ends */
-/* Content Starts */
-.content{
-    float: left;
-    width: 69%;
-    height: 85%;
-    /* background-color: #c2eeee; */
-    padding: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 1%;
-    margin-left: 0%;
-}
-/* Content ends */
-/* Main ends */
+/* ===============================Navigation Bar CSS ends======================================== */
 
 
-/* Footer CSS Starts */
+
+
+
+
+
+/* =============================== Footer CSS Starts ===============================*/
 .footer{
     background-color: rgb(206, 206, 194);
     clear: both;
@@ -75,35 +156,28 @@ body{
     width: 100%;
 }
 
-/* Footer CSS Starts */
+/*=============================== Footer CSS Starts ===============================*/
 
 
-/* One Class sinle functions */
 
+
+
+/* ===============================  Font-Awesome Modified  =============================== */
+.fa-trash{
+    content: "\f1f8";
+    padding: 3%;
+}
+
+.fa-plus{
+    display: none;
+}
+
+.fa-search{
+    display: inline-block;
+}
+
+
+/* ================================= Simple Helper Classes CSS ====================================*/
 .active{
     background-color: #bdf5f475;
 }
-
-th, td {
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    border: 0.01px solid #000000;
-    box-shadow: 0 2px 3px 0 rgb(180, 236, 236);
-  }
-
-  table{
-    border-collapse: separate;
-    border-spacing: 5px;
-  }
-
-  #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 92%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }

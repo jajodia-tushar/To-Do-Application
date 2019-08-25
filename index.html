@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do Application</title>
 
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="js/main-script.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 <body>
    
@@ -20,41 +21,45 @@
 
         <div class="navigation">
             <ul>
-                <li class="active">To-Do</li>
-                <li>Users</li>
-                <li>Contact-Us</li>
+                <li class="active" onclick="navButtonClicked(this);">To-Do</li>
+                <li onclick="navButtonClicked(this);" >Users</li>
+                <li onclick="navButtonClicked(this);" >Contact-Us</li>
             </ul>
 
         </div>
 
         <div class="content">
+
             <div class="to-do">
-                
-            
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-            
-                <table style="width:100%">
-                    <tr>
+                <table class="task-table" style="width:100%">
+                    <tr class="search-box" >
+                        <td >
+                            <input class="input-field" type="textarea" placeholder="
+                            Type..." name="search-box" onkeyup="searchButtonClicked(event);">
+                        </td>
+                        <td>
+                            <i class="fa fa-plus fa-2x icon inactive" onclick="addButtonClicked();" ></i>
+                            <i class="fa fa-search fa-2x icon"></i>
+                        </td>
+
+                    </tr>
+
+                    <tr class="task-row">
                       <th>Task</th>
                       <th>Action</th> 
                     </tr>
-                    <tr>
-                      <td>Complete CSS</td>
-                      <td>
-                        <i class="fas fa-cloud"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-car"></i>  
-                      </td>
-                    </tr>
                 </table>
-
             </div>
 
             <div class="users">
+                
+                <h2>This is the Users Page</h2>
 
             </div>
 
             <div class="contact-us">
+
+                <h2>This is the Contact-Us Page</h2>
 
             </div>
 
